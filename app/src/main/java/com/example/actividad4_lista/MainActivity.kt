@@ -6,6 +6,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
+import java.text.ChoiceFormat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         //Pasamos el contexto
         //El layout de la vista
         //El array que se va a mostrar
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, provincias)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_multiple_choice, provincias)
         //val adapter = ArrayAdapter(this, R.layout.fila, provincias)
         ListViewProvincias.adapter = adapter
 
