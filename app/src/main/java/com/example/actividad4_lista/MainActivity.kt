@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 } else
                     TextViewProvinciaSeleccionadad.text =
                         "Ninguna pronvincia seleccionada"
+
             }
     }
 }
